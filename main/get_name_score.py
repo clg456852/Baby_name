@@ -134,8 +134,8 @@ def compute_and_writefile(name_postfix):
         name_data = compute_name_score(name_postfix)
         write_to_file(fout, name_data)
     except Exception as e:
-        str = 'error, %s %s\n' % (e, name_postfix)
-        print str.encode("utf-8")
+        error = 'error, %s %s\n' % (e, name_postfix)
+        print error.encode("utf-8")
 
 
 def get_full_name(name_postfix):
