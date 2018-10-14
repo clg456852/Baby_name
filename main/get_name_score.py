@@ -19,20 +19,20 @@ import time
 import threadpool
 import os
 
-curPath = os.path.abspath(os.path.dirname(__file__))
-paths = os.path.split(curPath)
-rootPath = os.path.split(curPath)[0]
-sys.path.append(rootPath)
 
-print (paths)
+# curPath = os.path.abspath(__file__)
+# paths = os.path.split(curPath)
+# rootPath = os.path.split(curPath)[0]
+# sys.path.append(rootPath)
+#
+# print(curPath)
+# print (paths)
 
 from main import user_config
 from main import sys_config
 
 reload(sys) 
 sys.setdefaultencoding("GB18030")
-
-
 
 
 curr_idx = 0
@@ -134,8 +134,8 @@ def compute_and_writefile(name_postfix):
         name_data = compute_name_score(name_postfix)
         write_to_file(fout, name_data)
     except Exception as e:
-        str = 'error, %s %s\n' % (e, name_postfix)
-        print str.encode("utf-8")
+        error = 'error, %s %s\n' % (str(e), name_postfix)
+        print error.encode("utf-8")
 
 
 def get_full_name(name_postfix):
@@ -147,14 +147,16 @@ def write_to_file(fout, name_data):
     lock.acquire()
     global curr_idx, all_count
     curr_idx += 1
-    str = "%d/%d" % (curr_idx, all_count),
-    result = str + "\t".join((name_data['full_name'],
+    idx = "%d/%d" % (curr_idx, all_count)
+    full_name = name_data['full_name'].decode("GB18030").encode("utf-8")
+    print("full_name = " + full_name)
+    result = "\t".join((full_name,
                      "姓名八字评分=" + str(name_data['bazi_score']),
                      "姓名五格评分=" + str(name_data['wuge_score']),
                      "总分=" + str(name_data['total_score'])
                      ))
     print result.encode("utf-8")
-    fout.write(name_data['full_name'] + "\t" 
+    fout.write(name_data['full_name'] + "\t"
                + str(name_data['bazi_score']) + "\t" 
                + str(name_data['wuge_score']) + "\t" 
                + str(name_data['total_score']) + "\n")
@@ -163,6 +165,7 @@ def write_to_file(fout, name_data):
 def process(output_fpath):
     """计算并且将结果输出到文件
     """
+
     global fout
     # 输出文件路径
     fout = open(output_fpath, "w")
