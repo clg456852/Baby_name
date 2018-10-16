@@ -28,10 +28,10 @@ import os
 # print(curPath)
 # print (paths)
 
-from main import user_config
-from main import sys_config
+import user_config
+import sys_config
 
-reload(sys) 
+reload(sys)
 sys.setdefaultencoding("GB18030")
 
 
@@ -148,14 +148,14 @@ def write_to_file(fout, name_data):
     global curr_idx, all_count
     curr_idx += 1
     idx = "%d/%d" % (curr_idx, all_count)
-    full_name = name_data['full_name'].decode("GB18030").encode("utf-8")
+    full_name = name_data['full_name'].decode("gb18030").encode("utf-8")
     print("full_name = " + full_name)
-    result = "\t".join((full_name,
-                     "姓名八字评分=" + str(name_data['bazi_score']),
-                     "姓名五格评分=" + str(name_data['wuge_score']),
-                     "总分=" + str(name_data['total_score'])
+    result = "\t".join((name_data['full_name'],
+                     "姓名八字评分 " + str(name_data['bazi_score']),
+                     "姓名五格评分 " + str(name_data['bazi_score']),
+                     "总分 " + str(name_data['total_score'])
                      ))
-    print result.encode("utf-8")
+    print result.decode("gb18030").encode("utf-8")
     fout.write(name_data['full_name'] + "\t"
                + str(name_data['bazi_score']) + "\t" 
                + str(name_data['wuge_score']) + "\t" 
