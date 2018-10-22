@@ -75,7 +75,10 @@ def get_name_postfixs():
 
 
 def compute_name_score(name_postfix):
-    """调用接口，执行计算，返回结果
+    """
+    调用接口，执行计算，返回结果
+    :param name_postfix:
+    :return: result of crawler
     """
     result_data = {}
     params = {}
@@ -176,7 +179,9 @@ def process(output_fpath):
     all_count = len(all_name_postfixs)
      
     pool = threadpool.ThreadPool(50) 
-    requests = threadpool.makeRequests(compute_and_writefile, all_name_postfixs) 
+    requests = threadpool.makeRequests(compute_and_writefile, all_name_postfixs)
+    # Equal to for req in requests:
+    #               pool.putRequest(req)
     [pool.putRequest(req) for req in requests] 
     pool.wait()  
 
