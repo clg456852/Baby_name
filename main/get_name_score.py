@@ -116,7 +116,7 @@ def compute_name_score(name_postfix):
     full_name = get_full_name(name_postfix)
     
     # print soup.find(string=re.compile(u"姓名五格评分"))
-    for node in soup.find_all("div", class_="chaxun_b"):
+    for node in soup.find_axll("div", class_="chaxun_b"):
         node_cont = node.get_text()
         if u'姓名五格评分' in node_cont:
             name_wuge = node.find(string=re.compile(u"姓名五格评分"))
@@ -182,8 +182,8 @@ def process(output_fpath):
     requests = threadpool.makeRequests(compute_and_writefile, all_name_postfixs)
     # Equal to for req in requests:
     #               pool.putRequest(req)
-    [pool.putRequest(req) for req in requests] 
-    pool.wait()  
+    [pool.putRequest(req) for req in requests]
+    pool.wait()
 
     fout.flush()
     fout.close()
@@ -191,7 +191,6 @@ def process(output_fpath):
 
 if __name__ == "__main__":
     print "begin................................"
-    print u"一段代码啊"
     output_fpath = "./outputs/%s" % user_config.setting["output_fname"]
     process(output_fpath)
     print "over................................"
