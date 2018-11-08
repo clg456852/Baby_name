@@ -7,7 +7,7 @@ import  re
 
 
 # # The proxy address and port:
-# proxy_info = {'host': 'dev-proxy.oa.com', 'port': 8080}
+# proxy_info = { 'host' : 'dev-proxy.oa.com','port' : 8080 }
 #
 # # We create a handler for the proxy
 # proxy_support = urllib2.ProxyHandler({"http": "http://%(host)s:%(port)d" % proxy_info})
@@ -18,8 +18,8 @@ import  re
 # # Then we install this opener as the default opener for urllib2:
 # urllib2.install_opener(opener)
 
-url = "http://tieba.baidu.com/p/2460150866"
+url = "http://tieba.baidu.com"
 request = urllib2.Request(url)
-page = urllib2.urlopen(url)
+page = urllib2.urlopen(url, timeout=10)
 html = page.read()
 print html

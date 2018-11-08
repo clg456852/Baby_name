@@ -10,6 +10,7 @@ from snownlp import SnowNLP
 
 # def create_names():
 
+excluds = {'兮', '忧', '恶', '愁', '陷', '乱', '穷', '邪', '哀', '萎', '靡', '险', '黑', '下', '戚', '惨', '瘦', '雕', '鬼', '龟'}
 
 def find_corpus(text_file):
     dir_name, base_name = os.path.split(text_file)
@@ -35,7 +36,7 @@ def clauses_from_sentence(sentence):
     return cn_clauses
 
 
-def add_new_name(n,names):
+def add_new_name(n, names):
     if n not in names:
         names.append(n)
 
@@ -98,42 +99,60 @@ def create_name_from(corpus):
     with open(corpus_path, 'r') as corpus:
         with open(target_path, 'w') as target:
             target.write('\n')
+        result_names = []
         for line in corpus:
             names = create_names_based_on(line.decode('utf-8'))
-            with open(target_path, 'a') as target_names:
-                for n in names:
-                    target_names.write(n.encode('utf-8') + "\n")
-            with open(postive_target_path, 'a') as postive_targets:
-                for n in names:
-                    has_added = False
-                    source = None
-                    if n.encode('utf-8').startswith('\n来源:') or len(n.encode('utf-8').strip()) < 1:
-                        if n.encode('utf-8').startswith('\n来源:'):
-                            source = n.encode('utf-8')
-                            name_source = source
-                            if useful_source:
-                                postive_targets.write(name_source + '\n')
-                        # continue
-                    if not source:
-                        s = SnowNLP(n)
-                        if s.sentiments > 0.8:
-                            if s.pinyin:
-                                for py in s.pinyin:
-                                    if py.encode('utf-8').endswith("o") or py.encode('utf-8').startswith("g"):
-                                        # Pin Yin
-                                        has_added = True
-                                        postive_targets.write(n.encode('utf-8') + "\n")
-                                        print(n.encode('utf-8') + '******\n')
-                                if s.tags and not has_added:
-                                    for tag in s.tags:
-                                        # 获取词性
-                                        if tag[0] == n[0] and tag[1] == u'v' or tag[1] == u'a':
-                                            has_added = True
-                                            postive_targets.write(n.encode('utf-8') + "\n")
-                                            print(n.encode('utf-8') + '\n')
-                                        if len(s.tags) > 2:
-                                            assert 0
-                    useful_source = has_added
+            for n in names:
+                add_new_name(n, result_names)
+                print("add name to result_names" + ' ' + n)
+        with open(target_path, 'w') as target_names:
+            for n in result_names:
+                target_names.write(n.encode('utf-8') + "\n")
+        with open(postive_target_path, 'w') as postive_targets:
+            for n in result_names:
+                has_added = False
+                source = None
+                if n.encode('utf-8').startswith('\n来源:') or len(n.encode('utf-8').strip()) < 1:
+                    if n.encode('utf-8').startswith('\n来源:'):
+                        source = n.encode('utf-8')
+                        # name_source = source
+                        if useful_source and source:
+                            postive_targets.write(source + '\n')
+                            useful_source = False
+                    continue
+                need_exclude = False
+                if len(n.encode('utf-8')) <= 6:
+                    for e in excluds:
+                        if e in n.encode('utf-8'):
+                            need_exclude = True
+                            break
+                if need_exclude:
+                    continue
+                if u'全独' == n:
+                    print("全独^^^&&&&&")
+                s = SnowNLP(n)
+                if s.sentiments > 0.8:
+                    if s.pinyin:
+                        for py in s.pinyin:
+                            if py.encode('utf-8').endswith("o") or py.encode('utf-8').startswith("g"):
+                                # Pin Yin
+                                has_added = True
+                                if py.encode('utf-8').endswith("uo"):
+                                    postive_targets.write(n.encode('utf-8') + "\n")
+                                    print(n.encode('utf-8') + '******\n')
+                                else:
+                                    postive_targets.write(n.encode('utf-8') + "\n")
+                        if s.tags and not has_added:
+                            for tag in s.tags:
+                                # 获取词性
+                                if not has_added and ((tag[0] == n[0] and tag[1] == u'v') or tag[1] == u'a'):
+                                    has_added = True
+                                    postive_targets.write(n.encode('utf-8') + "\n")
+                                    print(n.encode('utf-8') + '\n')
+                                if len(s.tags) > 2:
+                                    assert 0
+                if has_added:
+                    useful_source = True
 
     print("created name from %s" % selected_corpus)
 
@@ -146,4 +165,13 @@ if __name__ == '__main__':
     #     print("1")
     # if len(n.encode('utf-8').strip()) < 1:
     #     print('2')
-    create_name_from(convertZh.shi_jing)
+    # 诗经
+    # create_name_from(convertZh.shi_jing)
+    # # # 楚辞
+    # create_name_from(convertZh.chu_ci)
+    # # # 300 tang
+    # create_name_from(convertZh.tang_300_peom)
+    # # 300 chu
+    # create_name_from(convertZh.song_300_verse)
+    # quan tang song verse
+    create_name_from(convertZh.all_tang_song_verse)
