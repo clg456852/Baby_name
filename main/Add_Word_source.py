@@ -34,7 +34,8 @@ def add_word_source_for_file(file_path):
 
 
 if __name__ == '__main__':
-    add_word_source_for_file(convertZh.chu_ci)
-    add_word_source_for_file(convertZh.shi_jing)
-    add_word_source_for_file(convertZh.tang_300_peom)
-    add_word_source_for_file(convertZh.song_300_verse)
+    # add_word_source_for_file(convertZh.chu_ci)
+    # add_word_source_for_file(convertZh.shi_jing)
+    # add_word_source_for_file(convertZh.tang_300_peom)
+    # add_word_source_for_file(convertZh.song_300_verse)
+    add_word_source_for_file(convertZh.all_tang_song_verse)
