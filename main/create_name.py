@@ -1,16 +1,30 @@
 #!usr/bin/env python
 # coding:utf-8
 
-import convertZh
+import sys
 import os
 import re
+
+cwd = os.path.abspath('.')
+dir_name, base = os.path.split(cwd)
+sys.path.append(dir_name)
+
+
+import convertZh
+import Add_Word_source
+
 import random
 import jieba
 from snownlp import SnowNLP
+import name_score_post
 
-# def create_names():
 
-excluds = {'兮', '忧', '恶', '愁', '陷', '乱', '穷', '邪', '哀', '萎', '靡', '险', '黑', '下', '戚', '惨', '瘦', '雕', '鬼', '龟'}
+
+excluds = {'兮', '忧', '恶', '愁', '陷', '乱', '穷', '邪', '哀', '萎', '靡', '险', '黑', '下', '戚', '惨', '瘦', '雕', '鬼', '龟', '难', '曰', '焉', '祭', '丧', '矣'}
+
+surname = None
+finals_consonant = None
+finals_consonant = None
 
 def find_corpus(text_file):
     dir_name, base_name = os.path.split(text_file)
@@ -48,13 +62,13 @@ def create_names_based_on(text_line):
     for clause in clauses:
         if len(clause) > 3:
             add_new_name(clause[0] + clause[1], names)
-            add_new_name(clause[len(clause)-2] + clause[len(clause)-1], names)
-            add_new_name(clause[-1] + clause[-3], names)
+            add_new_name(clause[-2] + clause[-1], names)
+            add_new_name(clause[-3] + clause[-1], names)
 
             seg_list = jieba.cut(clause, cut_all=True)
             for seg in seg_list:
                 if len(seg) == 2:
-                    add_new_name(seg,seg)
+                    add_new_name(seg, names)
                 if len(seg) == 4:
                     add_new_name(seg[0] + seg[1], names)
                     add_new_name(seg[-2] + seg[-1], names)
@@ -88,12 +102,14 @@ def attach_pre_name_to(prefix,file_path):
 
 
 def create_name_from(corpus):
+    global surname
     selected_corpus = corpus
     corpus_path = find_corpus(selected_corpus)
     target_path = find_target_names(selected_corpus)
     postive_target_path = attach_pre_name_to('postive_', target_path)
     name_source = None
     useful_source = False
+
     if os.path.isfile(postive_target_path):
         os.remove(postive_target_path)
     with open(corpus_path, 'r') as corpus:
@@ -104,7 +120,6 @@ def create_name_from(corpus):
             names = create_names_based_on(line.decode('utf-8'))
             for n in names:
                 add_new_name(n, result_names)
-                print("add name to result_names" + ' ' + n)
         with open(target_path, 'w') as target_names:
             for n in result_names:
                 target_names.write(n.encode('utf-8') + "\n")
@@ -128,20 +143,16 @@ def create_name_from(corpus):
                             break
                 if need_exclude:
                     continue
-                if u'全独' == n:
-                    print("全独^^^&&&&&")
                 s = SnowNLP(n)
-                if s.sentiments > 0.8:
+                if s.sentiments > 0.6:
                     if s.pinyin:
                         for py in s.pinyin:
-                            if py.encode('utf-8').endswith("o") or py.encode('utf-8').startswith("g"):
+                            if (py.encode('utf-8').endswith(finals_consonant) or py.encode('utf-8').endswith(finals_consonant[-1]))\
+                                    and not py.encode('utf-8').startswith(initial_consonant):
                                 # Pin Yin
                                 has_added = True
-                                if py.encode('utf-8').endswith("uo"):
-                                    postive_targets.write(n.encode('utf-8') + "\n")
-                                    print(n.encode('utf-8') + '******\n')
-                                else:
-                                    postive_targets.write(n.encode('utf-8') + "\n")
+                                postive_targets.write(n.encode('utf-8') + "\n")
+                                print(n.encode('utf-8') + '\n')
                         if s.tags and not has_added:
                             for tag in s.tags:
                                 # 获取词性
@@ -153,25 +164,41 @@ def create_name_from(corpus):
                                     assert 0
                 if has_added:
                     useful_source = True
-
-    print("created name from %s" % selected_corpus)
+    # Add_Word_source.add_word_source_for_file(corpus)
+    print("created names from %s" % selected_corpus)
+    print("names file at %s" % postive_target_path)
 
 if __name__ == '__main__':
+    surname = raw_input("宝宝姓氏：")
+    sn = SnowNLP(surname.decode('utf-8'))
+    sn_pinyin = sn.pinyin[0]
+    sn_pinyin = sn_pinyin.encode('utf-8')
+    initial_consonant = sn_pinyin[0]
+    finals_consonant = sn_pinyin[1:len(sn_pinyin)]
+    birth_day = raw_input("出生日期(year/month/day)：")
+    day_subs = birth_day.split('/')
+    birth_time = raw_input("出生时间(hour/minute)：")
+    time_subs = birth_time.split('/')
 
-    # n = u'\n来源: 寿考且宁，以保我后生。\n'
-    # print(n[0] + n[3:-1])
-    # s = n.encode('utf-8')
-    # if n.encode('utf-8').startswith('\n来源: '):
-    #     print("1")
-    # if len(n.encode('utf-8').strip()) < 1:
-    #     print('2')
+    # POST form
+    name_score_post.form["ctl00$ContentPlaceHolder1$InputBasicInfo1$tbXing"] = surname
+    name_score_post.form["ctl00$ContentPlaceHolder1$InputBasicInfo1$ddlYear"] = day_subs[0]
+    name_score_post.form["ctl00$ContentPlaceHolder1$InputBasicInfo1$ddlMonth"] = day_subs[1]
+    name_score_post.form["ctl00$ContentPlaceHolder1$InputBasicInfo1$ddlDay"] = day_subs[2]
+    name_score_post.form["ctl00$ContentPlaceHolder1$InputBasicInfo1$ddlHour"] = time_subs[0]
+    name_score_post.form["ctl00$ContentPlaceHolder1$InputBasicInfo1$ddlMinute"] = time_subs[1]
+
     # 诗经
     # create_name_from(convertZh.shi_jing)
-    # # # 楚辞
-    # create_name_from(convertZh.chu_ci)
-    # # # 300 tang
+    # 楚辞
+    create_name_from(convertZh.chu_ci)
+    name_score_post.create_name_excel_from(convertZh.chu_ci)
+    # 300 tang
     # create_name_from(convertZh.tang_300_peom)
-    # # 300 chu
+    # 300 chu
     # create_name_from(convertZh.song_300_verse)
     # quan tang song verse
-    create_name_from(convertZh.all_tang_song_verse)
+    # create_name_from(convertZh.all_tang_song_verse)
+    # lun_lu
+    # create_name_from(convertZh.lun_yu)
+

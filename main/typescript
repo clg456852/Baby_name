@@ -1,1142 +1,0 @@
-Script started on Sun Oct 14 17:53:36 2018
-]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[17:53:37] 
-[1m[31m$ [00m[K[?1h=[?2004hlls[?1l>[?2004l
-]2;ls -G]1;ls__init__.py       [1m[36mdicts[39;49m[0m             [1m[36moutputs[39;49m[0m           sys_config.py     testEncoding      user_config.py
-__init__.pyc      get_name_score.py [1m[36mscripts[39;49m[0m           sys_config.pyc    typescript        user_config.pyc
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[17:53:38] 
-[1m[31m$ [00m[K[?1h=[?2004hsscriptes  Ss[1m/[0m[0m/
-[J[0m__init__.py           [Jfilter.py             [Jtest.py               [Junique_file_lines.py[J[A[0m[27m[24m[2Cscripts/[K[?1l>[?2004l
-[J]2;scripts/]1;scripts/[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;../main/scripts]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main/scripts[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main/scripts[00m [37mon[00m git:[36mmaster [31mx[00m [37m[17:53:48] 
-[1m[31m$ [00m[K[?1h=[?2004hLLS[?1l>[?2004l
-]2;LS]1;LS__init__.py		filter.py		test.py			unique_file_lines.py
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;../main/scripts]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main/scripts[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main/scripts[00m [37mon[00m git:[36mmaster [31mx[00m [37m[17:53:49] 
-[1m[31m$ [00m[K[?1h=[?2004hccd ..[?1l>[?2004l
-]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[17:54:04] 
-[1m[31m$ [00m[K[?1h=[?2004hggot l  g git log -pretty-pretty[1m=[0m[0m      
-[0m--parents          -- display parents of commit
---patch            -- generate diff in patch format
---patch-with-raw   -- generate patch but also keep the default raw diff output
---patch-with-stat  -- generate patch and prepend its diffstat
---patience         -- generate diffs with patience algorithm
---pickaxe-all      -- when -S finds a change, show all changes in that changeset
---pickaxe-regex    -- treat argument of -S as regular expression
-[J--pretty           -- pretty print commit messages[J[8A[0m[27m[24m[2Cgit log --p[Kretty=get
-[J[A[22C_name_scro  ore.py[?1l>[?2004l
-[J]2;git log --pretty=get_name_score.py]1;gitfatal: invalid --pretty format: get_name_score.py
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[17:54:37] C:[31m128[00m
-[1m[31m$ [00m[K[?1h=[?2004hgit log --pretty=get_name_score.py[7C[4C[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D get_name_score.py[17D- get_name_score.py[18D- get_name_score.py[18Dp get_name_score.py[18Dr get_name_score.py[18De get_name_score.py[18Dt get_name_score.py[18Dt get_name_score.py[18Dy get_name_score.py[18D= get_name_score.py[18Do get_name_score.py[18Dn get_name_score.py[18Dl get_name_score.py[18Di get_name_score.py[18Dn get_name_score.py[18De get_name_score.py[18D[?1l>[?2004l
-]2;git log --pretty=online get_name_score.py]1;gitfatal: invalid --pretty format: online
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[17:55:09] C:[31m128[00m
-[1m[31m$ [00m[K[?1h=[?2004hgit log --pretty=online get_name_score.py[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[P[18C [19D[?1l>[?2004l
-]2;git log get_name_score.py]1;git[?1049h[?1h=[33mcommit 2e451886f9860d13856e70c5650c382f1dde9ba9[m[m
-Author: 郭艺帆 <guo_yifan@icloud.com>[m
-Date:   Sun Oct 7 18:20:08 2018 +0800[m
-[m
-    crawler return errors.[m
-[m
-[33mcommit d12f64968a4ce5e0415a3097d802723fa1e8209c[m[m
-Author: 郭艺帆 <guo_yifan@icloud.com>[m
-Date:   Sun Oct 7 18:04:12 2018 +0800[m
-[m
-    set up[m
-[7m(END)[27m[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[17:55:38] 
-[1m[31m$ [00m[K[?1h=[?2004hGGit G  ggit show [7md12f64968a4ce5e0415a3097d802723fa1e8209c[27m[40D[27md[27m1[27m2[27mf[27m6[27m4[27m9[27m6[27m8[27ma[27m4[27mc[27me[27m5[27me[27m0[27m4[27m1[27m5[27ma[27m3[27m0[27m9[27m7[27md[27m8[27m0[27m2[27m7[27m2[27m3[27mf[27ma[27m1[27me[27m8[27m2[27m0[27m9[27mc getnam   )na   _name_score.py[1m [0m[0m [?1l>[?2004l
-]2;git show d12f64968a4ce5e0415a3097d802723fa1e8209c get_name_score.py]1;git[?1049h[?1h=[33mcommit d12f64968a4ce5e0415a3097d802723fa1e8209c[m[m
-Author: 郭艺帆 <guo_yifan@icloud.com>[m
-Date:   Sun Oct 7 18:04:12 2018 +0800[m
-[m
-    set up[m
-[m
-[1mdiff --git a/main/get_name_score.py b/main/get_name_score.py[m[m
-[1mnew file mode 100644[m[m
-[1mindex 0000000..953997f[m[m
-[1m--- /dev/null[m[m
-[1m+++ b/main/get_name_score.py[m[m
-[36m@@ -0,0 +1,189 @@[m[m
-[32m+[m[32m# coding:GB18030[m[m
-[32m+[m[m
-[32m+[m[32m"""[m[m
-[32m+[m[32m[7m<B6><D4>[27mhttp://life.main.com/xingming.asp[7m<B5><D8>[27mַ[7m<B5><C4><D0><D5><C3><FB><B2><E2><CA>[27mԱ���[7m<BD><F8><D0><D0><D7>[27mԶ[7m<AF><CC>[27mύ[7m<B2><CE><CA><FD>[27m[m
-[32m[m[32m[7m<A3><AC><BB><F1>[27mȡ[7m<BD><E1><B9><FB>[27mҳ[7m<C3><E6><D6>[27mеķ[7m<D6><CA><FD><BD><E1><B9><FB>[27m[m[m
-[32m+[m[m
-[32m+[m[32mCreated on 2016[7m<C4><EA>[27m10[7m<D4><C2>[27m23[7m<C8><D5>[27m[m[m
-[32m+[m[m
-[32m+[m[32m@author: crazyant.net[m[m
-[32m+[m[32m"""[m[41m [m[m
-[32m+[m[m
-[32m+[m[32mimport urllib[m[41m [m[m
-[32m+[m[32mimport urllib2[m[41m [m[m
-[32m+[m[32mfrom bs4 import BeautifulSoup[m[m
-[32m+[m[32m# import beautifulsoup4[m[m
-[32m+[m[32mimport re[m[m
-[32m+[m[32mimport sys[m[41m [m[m
-[32m+[m[32mimport threading[m[m
-[32m+[m[32mimport time[m[41m [m[m
-[32m+[m[32mimport threadpool[m[m
-[32m+[m[32mimport os[m[m
-[32m+[m[m
-[32m+[m[32mcurPath = os.path.abspath(os.path.dirname(__file__))[m[m
-[32m+[m[32mpaths = os.path.split(curPath)[m[m
-[32m+[m[32mrootPath = os.path.split(curPath)[0][m[m
-[32m+[m[32msys.path.append(rootPath)[m[m
-[32m+[m[m
-[32m+[m[32mprint (paths)[m[m
-[32m+[m[m
-[32m+[m[32mfrom main import user_config[m[m
-[32m+[m[32mfrom main import sys_config[m[m
-[32m+[m[m
-[32m+[m[32mreload(sys)[m[41m [m[m
-[32m+[m[32msys.setdefaultencoding("GB18030")[m[m
-[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mcurr_idx = 0[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mall_count = 0[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mfout = None[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mdef get_name_postfixs():[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    """[7m<B8><F9><BE><DD><CA>[27mǷ[7m<F1>[27mʹ[7m<D3>[27mõ[7m<A5><D7>[27mֺ[7m<CD><D3>[27mû[7m<A7><C5><E4><D6>[27mõ[7m<C4><D0>[27mԱ[7m<F0><B2><CE><CA><FD><A3><AC><BB><F1>[27mȡ[7m<CB><F9><D3>[27mе[7m<C4>[27m[m :[K[K [KESCESC[KOO[KBB[K[32m[m[32m[7m<C3><FB><D7><D6><C1>[27mб[7m<ED>[27m[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    """[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    target_name_postfixs = set()[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m    [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    # [7m<CA>[27mǷ[7m<F1><D3>[27mе[7m<A5><D7><D6><CF><DE><D6><C6>[27m[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    has_limit_word = False[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    limit_word = user_config.setting["limit_world"][m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    if limit_word is not None and len(limit_word) > 0:[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        has_limit_word = True[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m        [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    if has_limit_word:[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        if user_config.setting["sex"] == "[7m<C4><D0>[27m":[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m            fpath_input = sys_config.FPATH_DICTFILE_BOYS_SINGLE[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        elif user_config.setting["sex"] == "Ů":[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m            fpath_input = sys_config.FPATH_DICTFILE_GIRLS_SINGLE[m[m
-:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mimport urllib[m[41m [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m"""[m[41m [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m@author: crazyant.net[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mCreated on 2016[7m<C4><EA>[27m10[7m<D4><C2>[27m23[7m<C8><D5>[27m[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m[m[32m[7m<A3><AC><BB><F1>[27mȡ[7m<BD><E1><B9><FB>[27mҳ[7m<C3><E6><D6>[27mеķ[7m<D6><CA><FD><BD><E1><B9><FB>[27m[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m[7m<B6><D4>[27mhttp://life.main.com/xingming.asp[7m<B5><D8>[27mַ[7m<B5><C4><D0><D5><C3><FB><B2><E2><CA>[27mԱ���[7m<BD><F8><D0><D0><D7>[27mԶ[7m<AF><CC>[27mύ[7m<B2><CE><CA><FD>[27m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m"""[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m# coding:GB18030[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[36m@@ -0,0 +1,189 @@[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1m+++ b/main/get_name_score.py[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1m--- /dev/null[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1mindex 0000000..953997f[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1mnew file mode 100644[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1mdiff --git a/main/get_name_score.py b/main/get_name_score.py[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM    set up[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HMDate:   Sun Oct 7 18:04:12 2018 +0800[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HMAuthor: 郭艺帆 <guo_yifan@icloud.com>[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[33mcommit d12f64968a4ce5e0415a3097d802723fa1e8209c[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mcurr_idx = 0[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mall_count = 0[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mfout = None[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mdef get_name_postfixs():[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    """[7m<B8><F9><BE><DD><CA>[27mǷ[7m<F1>[27mʹ[7m<D3>[27mõ[7m<A5><D7>[27mֺ[7m<CD><D3>[27mû[7m<A7><C5><E4><D6>[27mõ[7m<C4><D0>[27mԱ[7m<F0><B2><CE><CA><FD><A3><AC><BB><F1>[27mȡ[7m<CB><F9><D3>[27mе[7m<C4>[27m[m :[K[K [KESCESC[KOO[KBB[K[32m[m[32m[7m<C3><FB><D7><D6><C1>[27mб[7m<ED>[27m[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    """[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    target_name_postfixs = set()[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m    [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    # [7m<CA>[27mǷ[7m<F1><D3>[27mе[7m<A5><D7><D6><CF><DE><D6><C6>[27m[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    has_limit_word = False[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    limit_word = user_config.setting["limit_world"][m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    if limit_word is not None and len(limit_word) > 0:[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        has_limit_word = True[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m        [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    if has_limit_word:[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        if user_config.setting["sex"] == "[7m<C4><D0>[27m":[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m            fpath_input = sys_config.FPATH_DICTFILE_BOYS_SINGLE[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        elif user_config.setting["sex"] == "Ů":[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m            fpath_input = sys_config.FPATH_DICTFILE_GIRLS_SINGLE[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m        [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        print "has limit word, fpath=%s" % fpath_input[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m        [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        for line in open(fpath_input):[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m                iter_name = str(line).strip()[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m                target_name_postfixs.add("%s%s" % (limit_word, iter_name))[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    else:[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        if user_config.setting["sex"] == "[7m<C4><D0>[27m":[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m            fpath_input = sys_config.FPATH_DICTFILE_BOYS_DOUBLE[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        elif user_config.setting["sex"] == "Ů":[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m            fpath_input = sys_config.FPATH_DICTFILE_GIRLS_DOUBLE[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        for line in open(fpath_input):[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m                iter_name = str(line).strip()[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m                target_name_postfixs.add(iter_name)[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m    [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    return target_name_postfixs[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mdef compute_name_score(name_postfix):[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    """[7m<B5><F7><D3>[27mýӿڣ[7m<AC>[27mִ[7m<D0>[27mм[7m<C6><CB>[27m㣬[7m<B7><B5><BB>[27mؽ[7m<E1><B9><FB>[27m[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    """[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    result_data = {}[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    params = {}[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m    [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    # [7m<C8><D5><C6><DA><C0><E0><D0>[27mͣ[7m<AC>[27m0[7m<B1><ED>[27mʾ[7m<B9><AB><C0><FA><A3><AC>[27m1[7m<B1><ED>[27mʾũ[7m<C0><FA>[27m[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    params['data_type'] = "0"[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    params['year'] = "%s" % str(user_config.setting["year"])[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    params['month'] = "%s" % str(user_config.setting["month"])[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    params['day'] = "%s" % str(user_config.setting["day"])[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    params['hour'] = "%s" % str(user_config.setting["hour"])[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    params['minute'] = "%s" % str(user_config.setting["minute"])[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    params['pid'] = "%s" % str(user_config.setting["area_province"])[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    params['cid'] = "%s" % str(user_config.setting["area_region"])[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    # ϲ[7m<D3><C3><CE><E5><D0>[27mУ[7m<AC>[27m0[7m<B1><ED>[27mʾ[7m<D7>[27mԶ[7m<AF><B7><D6><CE><F6><A3><AC>[27m1[7m<B1><ED>[27mʾ[7m<D7>[27mԶ[7m<A8>[27mϲ[7m<D3><C3><C9><F1>[27m[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    params['wxxy'] = "0"[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    params['xing'] = "%s" % (user_config.setting["name_prefix"])[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    params['ming'] = name_postfix[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    # [7m<B1><ED>[27mʾŮ[7m<A3><AC>[27m1[7m<B1><ED>[27mʾ[7m<C4><D0>[27m[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    if user_config.setting["sex"] == "[7m<C4><D0>[27m":[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        params['sex'] = "1"[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    else:[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        params['sex'] = "0"[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m        [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    params['act'] = "submit"[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    params['isbz'] = "1"[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m    [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    # for k, v in params.items():[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    #    print k, v[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m    [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    post_data = urllib.urlencode(params)[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    req = urllib2.urlopen(sys_config.REQUEST_URL, post_data)[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    content = req.read()[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m    [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    soup = BeautifulSoup(content, 'html.parser', from_encoding="GB18030")[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    full_name = get_full_name(name_postfix)[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m    [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    # print soup.find(string=re.compile(u"[7m<D0><D5><C3><FB><CE><E5><B8><F1><C6><C0><B7><D6>[27m"))[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    for node in soup.find_all("div", class_="chaxun_b"):[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        node_cont = node.get_text()[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        if u'[7m<D0><D5><C3><FB><CE><E5><B8><F1><C6><C0><B7><D6>[27m' in node_cont:[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m            name_wuge = node.find(string=re.compile(u"[7m<D0><D5><C3><FB><CE><E5><B8><F1><C6><C0><B7><D6>[27m"))[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m            result_data['wuge_score'] = name_wuge.next_sibling.b.get_text()[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m        [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        if u'[7m<D0><D5><C3><FB><B0><CB><D7><D6><C6><C0><B7><D6>[27m' in node_cont:[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m            name_wuge = node.find(string=re.compile(u"[7m<D0><D5><C3><FB><B0><CB><D7><D6><C6><C0><B7><D6>[27m"))[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m            result_data['bazi_score'] = name_wuge.next_sibling.b.get_text()[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m    [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    result_data['total_score'] = float(result_data['wuge_score']) + float(result_data['bazi_score'])[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    result_data['full_name'] = full_name[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    return result_data[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m    [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mdef compute_and_writefile(name_postfix):[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    try:[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        global fout[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        name_data = compute_name_score(name_postfix)[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        write_to_file(fout, name_data)[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    except Exception as e:[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        str = 'error, %s %s\n' % (e, name_postfix)[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        print str.encode("utf-8")[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mdef get_full_name(name_postfix):[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    return "%s%s" % ((user_config.setting["name_prefix"]), name_postfix)[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mlock = threading.Lock()[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mdef write_to_file(fout, name_data):[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    lock.acquire()[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    global curr_idx, all_count[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    curr_idx += 1[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    str = "%d/%d" % (curr_idx, all_count),[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    result = str + "\t".join((name_data['full_name'],[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m                     "[7m<D0><D5><C3><FB><B0><CB><D7><D6><C6><C0><B7><D6>[27m=" + str(name_data['bazi_score']),[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m                     "[7m<D0><D5><C3><FB><CE><E5><B8><F1><C6><C0><B7><D6>[27m=" + str(name_data['wuge_score']),[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m                     "[7m<D7>[27mܷ[7m<D6>[27m=" + str(name_data['total_score'])[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m                     ))[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    print result.encode("utf-8")[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    fout.write(name_data['full_name'] + "\t"[m[41m [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m               + str(name_data['bazi_score']) + "\t"[m[41m [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m               + str(name_data['wuge_score']) + "\t"[m[41m [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m               + str(name_data['total_score']) + "\n")[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    lock.release()[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mdef process(output_fpath):[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    """[7m<BC><C6><CB>[27m㲢[7m<C7>[27mҽ[7m<AB><BD><E1><B9><FB><CA><E4><B3><F6><B5><BD><CE>[27mļ[7m<FE>[27m[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    """[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    global fout[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    # [7m<CA><E4><B3><F6><CE>[27mļ[7m<FE>[27m·[7m<BE><B6>[27m[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    fout = open(output_fpath, "w")[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    # [7m<BB><F1><B5><C3><CB><F9><D3>[27mп[7m<C9><D3>[27mõ[7m<C4><C3><FB><D7><D6><C1>[27mб[7m<ED>[27m[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    all_name_postfixs = get_name_postfixs()[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m    [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    global all_count[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    all_count = len(all_name_postfixs)[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m     [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    pool = threadpool.ThreadPool(50)[m[41m [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    requests = threadpool.makeRequests(compute_and_writefile, all_name_postfixs)[m[41m [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    [pool.putRequest(req) for req in requests][m[41m [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    pool.wait()[m[41m  [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    fout.flush()[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    fout.close()[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mif __name__ == "__main__":[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    print "begin................................"[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    print u"һ[7m<B6>[27mδ[7m<FA><C2>[27m밡"[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    output_fpath = "./outputs/%s" % user_config.setting["output_fname"][m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    process(output_fpath)[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    print "over................................"[m[m
-:[K[K [KESCESC[KOO[KBB[K\ No newline at end of file[m[m
-:[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    return "%s%s" % ((user_config.setting["name_prefix"]), name_postfix)[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mdef get_full_name(name_postfix):[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        print str.encode("utf-8")[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        str = 'error, %s %s\n' % (e, name_postfix)[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    except Exception as e:[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        write_to_file(fout, name_data)[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        name_data = compute_name_score(name_postfix)[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        global fout[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    try:[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mdef compute_and_writefile(name_postfix):[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[41m    [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    return result_data[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    result_data['full_name'] = full_name[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    result_data['total_score'] = float(result_data['wuge_score']) + float(result_data['bazi_score'])[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[41m    [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m            result_data['bazi_score'] = name_wuge.next_sibling.b.get_text()[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m            name_wuge = node.find(string=re.compile(u"[7m<D0><D5><C3><FB><B0><CB><D7><D6><C6><C0><B7><D6>[27m"))[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        if u'[7m<D0><D5><C3><FB><B0><CB><D7><D6><C6><C0><B7><D6>[27m' in node_cont:[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[41m        [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m            result_data['wuge_score'] = name_wuge.next_sibling.b.get_text()[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m            name_wuge = node.find(string=re.compile(u"[7m<D0><D5><C3><FB><CE><E5><B8><F1><C6><C0><B7><D6>[27m"))[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        if u'[7m<D0><D5><C3><FB><CE><E5><B8><F1><C6><C0><B7><D6>[27m' in node_cont:[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        node_cont = node.get_text()[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    for node in soup.find_all("div", class_="chaxun_b"):[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    # print soup.find(string=re.compile(u"[7m<D0><D5><C3><FB><CE><E5><B8><F1><C6><C0><B7><D6>[27m"))[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[41m    [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    full_name = get_full_name(name_postfix)[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    soup = BeautifulSoup(content, 'html.parser', from_encoding="GB18030")[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[41m    [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    content = req.read()[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    req = urllib2.urlopen(sys_config.REQUEST_URL, post_data)[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    post_data = urllib.urlencode(params)[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[41m    [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    #    print k, v[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    # for k, v in params.items():[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[41m    [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    params['isbz'] = "1"[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    params['act'] = "submit"[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[41m        [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        params['sex'] = "0"[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    else:[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        params['sex'] = "1"[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    if user_config.setting["sex"] == "[7m<C4><D0>[27m":[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    # [7m<B1><ED>[27mʾŮ[7m<A3><AC>[27m1[7m<B1><ED>[27mʾ[7m<C4><D0>[27m[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    params['ming'] = name_postfix[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    params['xing'] = "%s" % (user_config.setting["name_prefix"])[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    params['wxxy'] = "0"[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    # ϲ[7m<D3><C3><CE><E5><D0>[27mУ[7m<AC>[27m0[7m<B1><ED>[27mʾ[7m<D7>[27mԶ[7m<AF><B7><D6><CE><F6><A3><AC>[27m1[7m<B1><ED>[27mʾ[7m<D7>[27mԶ[7m<A8>[27mϲ[7m<D3><C3><C9><F1>[27m[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    params['cid'] = "%s" % str(user_config.setting["area_region"])[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    params['pid'] = "%s" % str(user_config.setting["area_province"])[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    params['minute'] = "%s" % str(user_config.setting["minute"])[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    params['hour'] = "%s" % str(user_config.setting["hour"])[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    params['day'] = "%s" % str(user_config.setting["day"])[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    params['month'] = "%s" % str(user_config.setting["month"])[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    params['year'] = "%s" % str(user_config.setting["year"])[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    params['data_type'] = "0"[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    # [7m<C8><D5><C6><DA><C0><E0><D0>[27mͣ[7m<AC>[27m0[7m<B1><ED>[27mʾ[7m<B9><AB><C0><FA><A3><AC>[27m1[7m<B1><ED>[27mʾũ[7m<C0><FA>[27m[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[41m    [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    params = {}[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    result_data = {}[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    """[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    """[7m<B5><F7><D3>[27mýӿڣ[7m<AC>[27mִ[7m<D0>[27mм[7m<C6><CB>[27m㣬[7m<B7><B5><BB>[27mؽ[7m<E1><B9><FB>[27m[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mdef compute_name_score(name_postfix):[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    return target_name_postfixs[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[41m    [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m                target_name_postfixs.add(iter_name)[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m                iter_name = str(line).strip()[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        for line in open(fpath_input):[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m            fpath_input = sys_config.FPATH_DICTFILE_GIRLS_DOUBLE[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        elif user_config.setting["sex"] == "Ů":[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m            fpath_input = sys_config.FPATH_DICTFILE_BOYS_DOUBLE[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        if user_config.setting["sex"] == "[7m<C4><D0>[27m":[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    else:[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m                target_name_postfixs.add("%s%s" % (limit_word, iter_name))[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m                iter_name = str(line).strip()[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        for line in open(fpath_input):[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[41m        [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        print "has limit word, fpath=%s" % fpath_input[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[41m        [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m            fpath_input = sys_config.FPATH_DICTFILE_GIRLS_SINGLE[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        elif user_config.setting["sex"] == "Ů":[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m            fpath_input = sys_config.FPATH_DICTFILE_BOYS_SINGLE[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        if user_config.setting["sex"] == "[7m<C4><D0>[27m":[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    if has_limit_word:[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[41m        [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m        has_limit_word = True[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    if limit_word is not None and len(limit_word) > 0:[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    limit_word = user_config.setting["limit_world"][m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    has_limit_word = False[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    # [7m<CA>[27mǷ[7m<F1><D3>[27mе[7m<A5><D7><D6><CF><DE><D6><C6>[27m[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[41m    [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    target_name_postfixs = set()[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    """[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m[m[32m[7m<C3><FB><D7><D6><C1>[27mб[7m<ED>[27m[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    """[7m<B8><F9><BE><DD><CA>[27mǷ[7m<F1>[27mʹ[7m<D3>[27mõ[7m<A5><D7>[27mֺ[7m<CD><D3>[27mû[7m<A7><C5><E4><D6>[27mõ[7m<C4><D0>[27mԱ[7m<F0><B2><CE><CA><FD><A3><AC><BB><F1>[27mȡ[7m<CB><F9><D3>[27mе[7m<C4>[27m[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mdef get_name_postfixs():[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mfout = None[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mall_count = 0[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mcurr_idx = 0[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32msys.setdefaultencoding("GB18030")[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mreload(sys)[m[41m [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mfrom main import sys_config[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mfrom main import user_config[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mprint (paths)[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32msys.path.append(rootPath)[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mrootPath = os.path.split(curPath)[0][m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mpaths = os.path.split(curPath)[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mcurPath = os.path.abspath(os.path.dirname(__file__))[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mimport os[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mimport threadpool[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mimport time[m[41m [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mimport threading[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mimport sys[m[41m [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mimport re[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m# import beautifulsoup4[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mfrom bs4 import BeautifulSoup[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mimport urllib2[m[41m [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mimport urllib[m[41m [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m"""[m[41m [m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m@author: crazyant.net[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32mCreated on 2016[7m<C4><EA>[27m10[7m<D4><C2>[27m23[7m<C8><D5>[27m[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m[m[32m[7m<A3><AC><BB><F1>[27mȡ[7m<BD><E1><B9><FB>[27mҳ[7m<C3><E6><D6>[27mеķ[7m<D6><CA><FD><BD><E1><B9><FB>[27m[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m[7m<B6><D4>[27mhttp://life.main.com/xingming.asp[7m<B5><D8>[27mַ[7m<B5><C4><D0><D5><C3><FB><B2><E2><CA>[27mԱ���[7m<BD><F8><D0><D0><D7>[27mԶ[7m<AF><CC>[27mύ[7m<B2><CE><CA><FD>[27m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m"""[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m# coding:GB18030[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[36m@@ -0,0 +1,189 @@[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1m+++ b/main/get_name_score.py[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1m--- /dev/null[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1mindex 0000000..953997f[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1mnew file mode 100644[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1mdiff --git a/main/get_name_score.py b/main/get_name_score.py[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM    set up[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HMDate:   Sun Oct 7 18:04:12 2018 +0800[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HMAuthor: 郭艺帆 <guo_yifan@icloud.com>[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[33mcommit d12f64968a4ce5e0415a3097d802723fa1e8209c[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mcurr_idx = 0[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mall_count = 0[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mfout = None[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mdef get_name_postfixs():[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    """[7m<B8><F9><BE><DD><CA>[27mǷ[7m<F1>[27mʹ[7m<D3>[27mõ[7m<A5><D7>[27mֺ[7m<CD><D3>[27mû[7m<A7><C5><E4><D6>[27mõ[7m<C4><D0>[27mԱ[7m<F0><B2><CE><CA><FD><A3><AC><BB><F1>[27mȡ[7m<CB><F9><D3>[27mе[7m<C4>[27m[m :[K[K [KESCESC[KOO[KBB[K[32m[m[32m[7m<C3><FB><D7><D6><C1>[27mб[7m<ED>[27m[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    """[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    target_name_postfixs = set()[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m    [m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    # [7m<CA>[27mǷ[7m<F1><D3>[27mе[7m<A5><D7><D6><CF><DE><D6><C6>[27m[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    has_limit_word = False[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    limit_word = user_config.setting["limit_world"][m[m
-:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m[7m<B6><D4>[27mhttp://life.main.com/xingming.asp[7m<B5><D8>[27mַ[7m<B5><C4><D0><D5><C3><FB><B2><E2><CA>[27mԱ���[7m<BD><F8><D0><D0><D7>[27mԶ[7m<AF><CC>[27mύ[7m<B2><CE><CA><FD>[27m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m"""[m[m
-[48;1H[K:[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[17:57:26] 
-[1m[31m$ [00m[K[?1h=[?2004h[?1l>[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[17:57:27] 
-[1m[31m$ [00m[K[?1h=[?2004hggit los g[?1l>[?2004l
-]2;git log]1;git[?1049h[?1h=[33mcommit d0b912354f197da736b9dd202122debbcd86d36c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m[m
-Merge: 2e45188 36ce24d[m
-Author: 郭艺帆 <guo_yifan@icloud.com>[m
-Date:   Sun Oct 7 18:20:43 2018 +0800[m
-[m
-    Merge remote-tracking branch 'origin/master'[m
-[m
-[33mcommit 2e451886f9860d13856e70c5650c382f1dde9ba9[m[m
-Author: 郭艺帆 <guo_yifan@icloud.com>[m
-Date:   Sun Oct 7 18:20:08 2018 +0800[m
-[m
-    crawler return errors.[m
-[m
-[33mcommit 36ce24db5845d6be75e1ab6fdac5605803d798a6[m[m
-Author: ooOlly <clg456852@gmail.com>[m
-Date:   Sun Oct 7 18:09:16 2018 +0800[m
-[m
-    Update README.md[m
-[m
-[33mcommit 7658dfb799d15f68d54eea554bf6c377dd583d05[m[m
-Author: ooOlly <clg456852@gmail.com>[m
-Date:   Sun Oct 7 18:05:55 2018 +0800[m
-[m
-    Update README.md[m
-[m
-[33mcommit d12f64968a4ce5e0415a3097d802723fa1e8209c[m[m
-Author: 郭艺帆 <guo_yifan@icloud.com>[m
-Date:   Sun Oct 7 18:04:12 2018 +0800[m
-[m
-    set up[m
-[m
-[33mcommit 9058f378b9688667fe401e8ad678713e7417205d[m[m
-Author: 郭艺帆 <guo_yifan@icloud.com>[m
-Date:   Sun Oct 7 18:02:14 2018 +0800[m
-[m
-    first commit[m
-[7m(END)[27m[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[17:57:56] 
-[1m[31m$ [00m[K[?1h=[?2004hggit show [7m2e451886f9860d13856e70c5650c382f1dde9ba9[27m[40D[27m2[27me[27m4[27m5[27m1[27m8[27m8[27m6[27mf[27m9[27m8[27m6[27m0[27md[27m1[27m3[27m8[27m5[27m6[27me[27m7[27m0[27mc[27m5[27m6[27m5[27m0[27mc[27m3[27m8[27m2[27mf[27m1[27md[27md[27me[27m9[27mb[27ma[27m9[?1l>[?2004l
-]2;git show 2e451886f9860d13856e70c5650c382f1dde9ba9]1;git[?1049h[?1h=[33mcommit 2e451886f9860d13856e70c5650c382f1dde9ba9[m[m
-Author: 郭艺帆 <guo_yifan@icloud.com>[m
-Date:   Sun Oct 7 18:20:08 2018 +0800[m
-[m
-    crawler return errors.[m
-[m
-[1mdiff --git a/.idea/workspace.xml b/.idea/workspace.xml[m[m
-[1mindex 0004988..65f3435 100644[m[m
-[1m--- a/.idea/workspace.xml[m[m
-[1m+++ b/.idea/workspace.xml[m[m
-[36m@@ -1,7 +1,10 @@[m[m
- <?xml version="1.0" encoding="UTF-8"?>[m[m
- <project version="4">[m[m
-   <component name="ChangeListManager">[m[m
-[31m-    <list default="true" id="1d87e879-dc66-4118-9ca6-e17d674c64ba" name="Default" comment="" />[m[m
-[32m+[m[32m    <list default="true" id="1d87e879-dc66-4118-9ca6-e17d674c64ba" name="Default" comment="">[m[m
-[32m+[m[32m      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="[m [32m[m[32mfalse" />[m[m
-[32m+[m[32m      <change beforePath="$PROJECT_DIR$/main/get_name_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/get_name_score.py" afte[m [32m[m[32mrDir="false" />[m[m
-[32m+[m[32m    </list>[m[m
-     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />[m[m
-     <option name="TRACKING_ENABLED" value="true" />[m[m
-     <option name="SHOW_DIALOG" value="false" />[m[m
-[36m@@ -10,18 +13,15 @@[m[m
-     <option name="LAST_RESOLUTION" value="IGNORE" />[m[m
-   </component>[m[m
-   <component name="CoverageDataManager">[m[m
-[31m-    <SUITE FILE_PATH="coverage/chinese_name_score$name_score.coverage" NAME="name_score Coverage Results" MODIFIED="1538906129019" SOUR[m [31mCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_EN[m [31mABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />[m[m
-[32m+[m[32m    <SUITE FILE_PATH="coverage/chinese_name_score$name_score.coverage" NAME="name_score Coverage Results" MODIFIED="1538907033336" SOUR[m [32m[m[32mCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_EN[m [32m[m[32mABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />[m[m
-   </component>[m[m
-   <component name="FileEditorManager">[m[m
-     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">[m[m
-       <file leaf-file-name="get_name_score.py" pinned="false" current-in-tab="true">[m[m
-         <entry file="file://$PROJECT_DIR$/main/get_name_score.py">[m[m
-           <provider selected="true" editor-type-id="text-editor">[m[m
-[31m-            <state relative-caret-position="274">[m[m
-[31m-              <caret line="146" column="18" lean-forward="true" selection-start-line="146" selection-start-column="18" selection-end-li[m [31mne="146" selection-end-column="18" />[m[m
-[31m-              <folding>[m[m
-[31m-                <element signature="e#140#153#0" expanded="true" />[m[m
-[31m-              </folding>[m[m
-[32m+[m[32m            <state relative-caret-position="240">[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line[m :[K[K [KESCESC[KOO[KBB[K[32m[m[32m="16" selection-end-column="16" />[m[m
-:[K[K [KESCESC[KOO[KBB[K             </state>[m[m
-:[K[K [KESCESC[KOO[KBB[K           </provider>[m[m
-:[K[K [KESCESC[KOO[KBB[K         </entry>[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -77,6 +77,9 @@[m[m
-:[K[K [KESCESC[KOO[KBB[K       <find>print</find>[m[m
-:[K[K [KESCESC[KOO[KBB[K     </findStrings>[m[m
-:[K[K [KESCESC[KOO[KBB[K   </component>[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  <component name="Git.Settings">[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  </component>[m[m
-:[K[K [KESCESC[KOO[KBB[K   <component name="IdeDocumentHistory">[m[m
-:[K[K [KESCESC[KOO[KBB[K     <option name="CHANGED_PATHS">[m[m
-:[K[K [KESCESC[KOO[KBB[K       <list>[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -100,6 +103,7 @@[m[m
-:[K[K [KESCESC[KOO[KBB[K     <option name="width" value="1400" />[m[m
-:[K[K [KESCESC[KOO[KBB[K     <option name="height" value="950" />[m[m
-:[K[K [KESCESC[KOO[KBB[K   </component>[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K   <component name="ProjectView">[m[m
-:[K[K [KESCESC[KOO[KBB[K     <navigator proportions="" version="1">[m[m
-:[K[K [KESCESC[KOO[KBB[K       <foldersAlwaysOnTop value="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -216,12 +220,13 @@[m[m
-:[K[K [KESCESC[KOO[KBB[K   </component>[m[m
-:[K[K [KESCESC[KOO[KBB[K   <component name="ToolWindowManager">[m[m
-:[K[K [KESCESC[KOO[KBB[K     <frame x="248" y="25" width="1400" height="950" extended-state="0" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    <editor active="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K     <layout>[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info anchor="bottom" id="TODO" order="6" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info anchor="bottom" id="Run" order="2" weight="0.33880422" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m      <window_info anchor="bottom" id="Version Control" order="7" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32942554" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32942554" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26141384" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -251,9 +256,6 @@[m[m
-:[K[K [KESCESC[KOO[KBB[K       <provider selected="true" editor-type-id="text-editor">[m[m
-:[K[K [KESCESC[KOO[KBB[K         <state relative-caret-position="2415">[m[m
-:[K[K [KESCESC[KOO[KBB[K           <caret line="161" column="7" lean-forward="true" selection-start-line="161" selection-start-column="7" selection-end-line="16[m :[K[K [KESCESC[KOO[KBB[K1" selection-end-column="7" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-          <folding>[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-            <element signature="e#140#153#0" expanded="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-          </folding>[m[m
-:[K[K [KESCESC[KOO[KBB[K         </state>[m[m
-:[K[K [KESCESC[KOO[KBB[K       </provider>[m[m
-:[K[K [KESCESC[KOO[KBB[K     </entry>[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -341,11 +343,8 @@[m[m
-:[K[K [KESCESC[KOO[KBB[K     </entry>[m[m
-:[K[K [KESCESC[KOO[KBB[K     <entry file="file://$PROJECT_DIR$/main/get_name_score.py">[m[m
-:[K[K [KESCESC[KOO[KBB[K       <provider selected="true" editor-type-id="text-editor">[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-        <state relative-caret-position="274">[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-          <caret line="146" column="18" lean-forward="true" selection-start-line="146" selection-start-column="18" selection-end-line="[m :[K[K [KESCESC[KOO[KBB[K[31m146" selection-end-column="18" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-          <folding>[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-            <element signature="e#140#153#0" expanded="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-          </folding>[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        <state relative-caret-position="240">[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16[m :[K[K [KESCESC[KOO[KBB[K[32m[m[32m" selection-end-column="16" />[m[m
-:[K[K [KESCESC[KOO[KBB[K         </state>[m[m
-:[K[K [KESCESC[KOO[KBB[K       </provider>[m[m
-:[K[K [KESCESC[KOO[KBB[K     </entry>[m[m
-:[K[K [KESCESC[KOO[KBB[K[1mdiff --git a/main/get_name_score.py b/main/get_name_score.py[m[m
-:[K[K [KESCESC[KOO[KBB[K[1mindex 953997f..7b46e9d 100644[m[m
-:[K[K [KESCESC[KOO[KBB[K[1m--- a/main/get_name_score.py[m[m
-:[K[K [KESCESC[KOO[KBB[K[1m+++ b/main/get_name_score.py[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -134,8 +134,8 @@[m [mdef compute_and_writefile(name_postfix):[m[m
-:[K[K [KESCESC[KOO[KBB[K         name_data = compute_name_score(name_postfix)[m[m
-:[K[K [KESCESC[KOO[KBB[K         write_to_file(fout, name_data)[m[m
-:[K[K [KESCESC[KOO[KBB[K     except Exception as e:[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-        str = 'error, %s %s\n' % (e, name_postfix)[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-        print str.encode("utf-8")[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        error = 'error, %s %s\n' % (e, name_postfix)[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        print error.encode("utf-8")[m[m
-:[K[K [KESCESC[KOO[KBB[K [m[m
-:[K[K [KESCESC[KOO[KBB[K [m[m
-:[K[K [KESCESC[KOO[KBB[K def get_full_name(name_postfix):[m[m
-:[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[HM       <window_info anchor="bottom" id="Run" order="2" weight="0.33880422" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       <window_info anchor="bottom" id="TODO" order="6" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <layout>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    <editor active="true" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <frame x="248" y="25" width="1400" height="950" extended-state="0" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   <component name="ToolWindowManager">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   </component>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[36m@@ -216,12 +220,13 @@[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       <foldersAlwaysOnTop value="true" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <navigator proportions="" version="1">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   <component name="ProjectView">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   </component>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <option name="height" value="950" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <option name="width" value="1400" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[36m@@ -100,6 +103,7 @@[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       <list>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <option name="CHANGED_PATHS">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   <component name="IdeDocumentHistory">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m  </component>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m  <component name="Git.Settings">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   </component>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     </findStrings>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       <find>print</find>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[36m@@ -77,6 +77,9 @@[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM         </entry>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM           </provider>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM             </state>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m[m[32m="16" selection-end-column="16" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m            <state relative-caret-position="240">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31m-              </folding>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31m-                <element signature="e#140#153#0" expanded="true" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31m-              <folding>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31mne="146" selection-end-column="18" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31m-              <caret line="146" column="18" lean-forward="true" selection-start-line="146" selection-start-column="18" selection-end-li[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31m-            <state relative-caret-position="274">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM           <provider selected="true" editor-type-id="text-editor">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM         <entry file="file://$PROJECT_DIR$/main/get_name_score.py">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       <file leaf-file-name="get_name_score.py" pinned="false" current-in-tab="true">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   <component name="FileEditorManager">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   </component>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m[m[32mABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m[m[32mCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_EN[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    <SUITE FILE_PATH="coverage/chinese_name_score$name_score.coverage" NAME="name_score Coverage Results" MODIFIED="1538907033336" SOUR[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31mABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31mCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_EN[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31m-    <SUITE FILE_PATH="coverage/chinese_name_score$name_score.coverage" NAME="name_score Coverage Results" MODIFIED="1538906129019" SOUR[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   <component name="CoverageDataManager">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   </component>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <option name="LAST_RESOLUTION" value="IGNORE" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[36m@@ -10,18 +13,15 @@[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <option name="SHOW_DIALOG" value="false" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <option name="TRACKING_ENABLED" value="true" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    </list>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m[m[32mrDir="false" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m      <change beforePath="$PROJECT_DIR$/main/get_name_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/get_name_score.py" afte[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m[m[32mfalse" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    <list default="true" id="1d87e879-dc66-4118-9ca6-e17d674c64ba" name="Default" comment="">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31m-    <list default="true" id="1d87e879-dc66-4118-9ca6-e17d674c64ba" name="Default" comment="" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   <component name="ChangeListManager">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM <project version="4">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM <?xml version="1.0" encoding="UTF-8"?>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[36m@@ -1,7 +1,10 @@[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1m+++ b/.idea/workspace.xml[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1m--- a/.idea/workspace.xml[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1mindex 0004988..65f3435 100644[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1mdiff --git a/.idea/workspace.xml b/.idea/workspace.xml[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM    crawler return errors.[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HMDate:   Sun Oct 7 18:20:08 2018 +0800[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HMAuthor: 郭艺帆 <guo_yifan@icloud.com>[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[33mcommit 2e451886f9860d13856e70c5650c382f1dde9ba9[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line[m :[K[K [KESCESC[KOO[KBB[K[32m[m[32m="16" selection-end-column="16" />[m[m
-:[K[K [KESCESC[KOO[KBB[K             </state>[m[m
-:[K[K [KESCESC[KOO[KBB[K           </provider>[m[m
-:[K[K [KESCESC[KOO[KBB[K         </entry>[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -77,6 +77,9 @@[m[m
-:[K[K [KESCESC[KOO[KBB[K       <find>print</find>[m[m
-:[K[K [KESCESC[KOO[KBB[K     </findStrings>[m[m
-:[K[K [KESCESC[KOO[KBB[K   </component>[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  <component name="Git.Settings">[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  </component>[m[m
-:[K[K [KESCESC[KOO[KBB[K   <component name="IdeDocumentHistory">[m[m
-:[K[K [KESCESC[KOO[KBB[K     <option name="CHANGED_PATHS">[m[m
-:[K[K [KESCESC[KOO[KBB[K       <list>[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -100,6 +103,7 @@[m[m
-:[K[K [KESCESC[KOO[KBB[K     <option name="width" value="1400" />[m[m
-:[K[K [KESCESC[KOO[KBB[K     <option name="height" value="950" />[m[m
-:[K[K [KESCESC[KOO[KBB[K   </component>[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K   <component name="ProjectView">[m[m
-:[K[K [KESCESC[KOO[KBB[K     <navigator proportions="" version="1">[m[m
-:[K[K [KESCESC[KOO[KBB[K       <foldersAlwaysOnTop value="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -216,12 +220,13 @@[m[m
-:[K[K [KESCESC[KOO[KBB[K   </component>[m[m
-:[K[K [KESCESC[KOO[KBB[K   <component name="ToolWindowManager">[m[m
-:[K[K [KESCESC[KOO[KBB[K     <frame x="248" y="25" width="1400" height="950" extended-state="0" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    <editor active="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K     <layout>[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info anchor="bottom" id="TODO" order="6" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info anchor="bottom" id="Run" order="2" weight="0.33880422" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m      <window_info anchor="bottom" id="Version Control" order="7" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32942554" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32942554" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26141384" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -251,9 +256,6 @@[m[m
-:[K[K [KESCESC[KOO[KBB[K       <provider selected="true" editor-type-id="text-editor">[m[m
-:[K[K [KESCESC[KOO[KBB[K         <state relative-caret-position="2415">[m[m
-:[K[K [KESCESC[KOO[KBB[K           <caret line="161" column="7" lean-forward="true" selection-start-line="161" selection-start-column="7" selection-end-line="16[m :[K[K [KESCESC[KOO[KBB[K1" selection-end-column="7" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-          <folding>[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-            <element signature="e#140#153#0" expanded="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-          </folding>[m[m
-:[K[K [KESCESC[KOO[KBB[K         </state>[m[m
-:[K[K [KESCESC[KOO[KBB[K       </provider>[m[m
-:[K[K [KESCESC[KOO[KBB[K     </entry>[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -341,11 +343,8 @@[m[m
-:[K[K [KESCESC[KOO[KBB[K     </entry>[m[m
-:[K[K [KESCESC[KOO[KBB[K     <entry file="file://$PROJECT_DIR$/main/get_name_score.py">[m[m
-:[K[K [KESCESC[KOO[KBB[K       <provider selected="true" editor-type-id="text-editor">[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-        <state relative-caret-position="274">[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-          <caret line="146" column="18" lean-forward="true" selection-start-line="146" selection-start-column="18" selection-end-line="[m :[K[K [KESCESC[KOO[KBB[K[31m146" selection-end-column="18" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-          <folding>[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-            <element signature="e#140#153#0" expanded="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-          </folding>[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        <state relative-caret-position="240">[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16[m :[K[K [KESCESC[KOO[KBB[K[32m[m[32m" selection-end-column="16" />[m[m
-:[K[K [KESCESC[KOO[KBB[K         </state>[m[m
-:[K[K [KESCESC[KOO[KBB[K       </provider>[m[m
-:[K[K [KESCESC[KOO[KBB[K     </entry>[m[m
-:[K[K [KESCESC[KOO[KBB[K[1mdiff --git a/main/get_name_score.py b/main/get_name_score.py[m[m
-:[K[K [KESCESC[KOO[KBB[K[1mindex 953997f..7b46e9d 100644[m[m
-:[K[K [KESCESC[KOO[KBB[K[1m--- a/main/get_name_score.py[m[m
-:[K[K [KESCESC[KOO[KBB[K[1m+++ b/main/get_name_score.py[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -134,8 +134,8 @@[m [mdef compute_and_writefile(name_postfix):[m[m
-:[K[K [KESCESC[KOO[KBB[K         name_data = compute_name_score(name_postfix)[m[m
-:[K[K [KESCESC[KOO[KBB[K         write_to_file(fout, name_data)[m[m
-:[K[K [KESCESC[KOO[KBB[K     except Exception as e:[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-        str = 'error, %s %s\n' % (e, name_postfix)[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-        print str.encode("utf-8")[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        error = 'error, %s %s\n' % (e, name_postfix)[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        print error.encode("utf-8")[m[m
-:[K[K [KESCESC[KOO[KBB[K [m[m
-:[K[K [KESCESC[KOO[KBB[K [m[m
-:[K[K [KESCESC[KOO[KBB[K def get_full_name(name_postfix):[m[m
-[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KAA[K[HM       <window_info anchor="bottom" id="Run" order="2" weight="0.33880422" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       <window_info anchor="bottom" id="TODO" order="6" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <layout>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    <editor active="true" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <frame x="248" y="25" width="1400" height="950" extended-state="0" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   <component name="ToolWindowManager">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   </component>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[36m@@ -216,12 +220,13 @@[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       <foldersAlwaysOnTop value="true" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <navigator proportions="" version="1">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   <component name="ProjectView">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   </component>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <option name="height" value="950" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <option name="width" value="1400" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[36m@@ -100,6 +103,7 @@[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       <list>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <option name="CHANGED_PATHS">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   <component name="IdeDocumentHistory">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m  </component>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m  <component name="Git.Settings">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   </component>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     </findStrings>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       <find>print</find>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[36m@@ -77,6 +77,9 @@[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM         </entry>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM           </provider>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM             </state>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m[m[32m="16" selection-end-column="16" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m            <state relative-caret-position="240">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31m-              </folding>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31m-                <element signature="e#140#153#0" expanded="true" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31m-              <folding>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31mne="146" selection-end-column="18" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31m-              <caret line="146" column="18" lean-forward="true" selection-start-line="146" selection-start-column="18" selection-end-li[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31m-            <state relative-caret-position="274">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM           <provider selected="true" editor-type-id="text-editor">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM         <entry file="file://$PROJECT_DIR$/main/get_name_score.py">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM       <file leaf-file-name="get_name_score.py" pinned="false" current-in-tab="true">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   <component name="FileEditorManager">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   </component>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m[m[32mABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m[m[32mCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_EN[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    <SUITE FILE_PATH="coverage/chinese_name_score$name_score.coverage" NAME="name_score Coverage Results" MODIFIED="1538907033336" SOUR[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31mABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31mCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_EN[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31m-    <SUITE FILE_PATH="coverage/chinese_name_score$name_score.coverage" NAME="name_score Coverage Results" MODIFIED="1538906129019" SOUR[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   <component name="CoverageDataManager">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   </component>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <option name="LAST_RESOLUTION" value="IGNORE" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[36m@@ -10,18 +13,15 @@[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <option name="SHOW_DIALOG" value="false" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <option name="TRACKING_ENABLED" value="true" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    </list>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m[m[32mrDir="false" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m      <change beforePath="$PROJECT_DIR$/main/get_name_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/get_name_score.py" afte[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m[m[32mfalse" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="[m[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[32m+[m[32m    <list default="true" id="1d87e879-dc66-4118-9ca6-e17d674c64ba" name="Default" comment="">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[31m-    <list default="true" id="1d87e879-dc66-4118-9ca6-e17d674c64ba" name="Default" comment="" />[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM   <component name="ChangeListManager">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM <project version="4">[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM <?xml version="1.0" encoding="UTF-8"?>[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[36m@@ -1,7 +1,10 @@[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1m+++ b/.idea/workspace.xml[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1m--- a/.idea/workspace.xml[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1mindex 0004988..65f3435 100644[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[1mdiff --git a/.idea/workspace.xml b/.idea/workspace.xml[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM    crawler return errors.[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HMDate:   Sun Oct 7 18:20:08 2018 +0800[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HMAuthor: 郭艺帆 <guo_yifan@icloud.com>[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[HM[33mcommit 2e451886f9860d13856e70c5650c382f1dde9ba9[m[m
-[48;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line[m :[K[K [KESCESC[KOO[KBB[K[32m[m[32m="16" selection-end-column="16" />[m[m
-:[K[K [KESCESC[KOO[KBB[K             </state>[m[m
-:[K[K [KESCESC[KOO[KBB[K           </provider>[m[m
-:[K[K [KESCESC[KOO[KBB[K         </entry>[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -77,6 +77,9 @@[m[m
-:[K[K [KESCESC[KOO[KBB[K       <find>print</find>[m[m
-:[K[K [KESCESC[KOO[KBB[K     </findStrings>[m[m
-:[K[K [KESCESC[KOO[KBB[K   </component>[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  <component name="Git.Settings">[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  </component>[m[m
-:[K[K [KESCESC[KOO[KBB[K   <component name="IdeDocumentHistory">[m[m
-:[K[K [KESCESC[KOO[KBB[K     <option name="CHANGED_PATHS">[m[m
-:[K[K [KESCESC[KOO[KBB[K       <list>[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -100,6 +103,7 @@[m[m
-:[K[K [KESCESC[KOO[KBB[K     <option name="width" value="1400" />[m[m
-:[K[K [KESCESC[KOO[KBB[K     <option name="height" value="950" />[m[m
-:[K[K [KESCESC[KOO[KBB[K   </component>[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K   <component name="ProjectView">[m[m
-:[K[K [KESCESC[KOO[KBB[K     <navigator proportions="" version="1">[m[m
-:[K[K [KESCESC[KOO[KBB[K       <foldersAlwaysOnTop value="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -216,12 +220,13 @@[m[m
-:[K[K [KESCESC[KOO[KBB[K   </component>[m[m
-:[K[K [KESCESC[KOO[KBB[K   <component name="ToolWindowManager">[m[m
-:[K[K [KESCESC[KOO[KBB[K     <frame x="248" y="25" width="1400" height="950" extended-state="0" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m    <editor active="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K     <layout>[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info anchor="bottom" id="TODO" order="6" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info anchor="bottom" id="Run" order="2" weight="0.33880422" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m      <window_info anchor="bottom" id="Version Control" order="7" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32942554" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32942554" />[m[m
-:[K[K [KESCESC[KOO[KBB[K       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26141384" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -251,9 +256,6 @@[m[m
-:[K[K [KESCESC[KOO[KBB[K       <provider selected="true" editor-type-id="text-editor">[m[m
-:[K[K [KESCESC[KOO[KBB[K         <state relative-caret-position="2415">[m[m
-:[K[K [KESCESC[KOO[KBB[K           <caret line="161" column="7" lean-forward="true" selection-start-line="161" selection-start-column="7" selection-end-line="16[m :[K[K [KESCESC[KOO[KBB[K1" selection-end-column="7" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-          <folding>[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-            <element signature="e#140#153#0" expanded="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-          </folding>[m[m
-:[K[K [KESCESC[KOO[KBB[K         </state>[m[m
-:[K[K [KESCESC[KOO[KBB[K       </provider>[m[m
-:[K[K [KESCESC[KOO[KBB[K     </entry>[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -341,11 +343,8 @@[m[m
-:[K[K [KESCESC[KOO[KBB[K     </entry>[m[m
-:[K[K [KESCESC[KOO[KBB[K     <entry file="file://$PROJECT_DIR$/main/get_name_score.py">[m[m
-:[K[K [KESCESC[KOO[KBB[K       <provider selected="true" editor-type-id="text-editor">[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-        <state relative-caret-position="274">[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-          <caret line="146" column="18" lean-forward="true" selection-start-line="146" selection-start-column="18" selection-end-line="[m :[K[K [KESCESC[KOO[KBB[K[31m146" selection-end-column="18" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-          <folding>[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-            <element signature="e#140#153#0" expanded="true" />[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-          </folding>[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        <state relative-caret-position="240">[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16[m :[K[K [KESCESC[KOO[KBB[K[32m[m[32m" selection-end-column="16" />[m[m
-:[K[K [KESCESC[KOO[KBB[K         </state>[m[m
-:[K[K [KESCESC[KOO[KBB[K       </provider>[m[m
-:[K[K [KESCESC[KOO[KBB[K     </entry>[m[m
-:[K[K [KESCESC[KOO[KBB[K[1mdiff --git a/main/get_name_score.py b/main/get_name_score.py[m[m
-:[K[K [KESCESC[KOO[KBB[K[1mindex 953997f..7b46e9d 100644[m[m
-:[K[K [KESCESC[KOO[KBB[K[1m--- a/main/get_name_score.py[m[m
-:[K[K [KESCESC[KOO[KBB[K[1m+++ b/main/get_name_score.py[m[m
-:[K[K [KESCESC[KOO[KBB[K[36m@@ -134,8 +134,8 @@[m [mdef compute_and_writefile(name_postfix):[m[m
-:[K[K [KESCESC[KOO[KBB[K         name_data = compute_name_score(name_postfix)[m[m
-:[K[K [KESCESC[KOO[KBB[K         write_to_file(fout, name_data)[m[m
-:[K[K [KESCESC[KOO[KBB[K     except Exception as e:[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-        str = 'error, %s %s\n' % (e, name_postfix)[m[m
-:[K[K [KESCESC[KOO[KBB[K[31m-        print str.encode("utf-8")[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        error = 'error, %s %s\n' % (e, name_postfix)[m[m
-:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m        print error.encode("utf-8")[m[m
-:[K[K [KESCESC[KOO[KBB[K [m[m
-:[K[K [KESCESC[KOO[KBB[K [m[m
-:[K[K [KESCESC[KOO[KBB[K def get_full_name(name_postfix):[m[m
-[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[19:26:28] 
-[1m[31m$ [00m[K[?1h=[?2004hggit revert -n [7m2e451886f9860d13856e70c5650c382f1dde9ba9[27m[40D[27m2[27me[27m4[27m5[27m1[27m8[27m8[27m6[27mf[27m9[27m8[27m6[27m0[27md[27m1[27m3[27m8[27m5[27m6[27me[27m7[27m0[27mc[27m5[27m6[27m5[27m0[27mc[27m3[27m8[27m2[27mf[27m1[27md[27md[27me[27m9[27mb[27ma[27m9[?1l>[?2004l
-]2;git revert -n 2e451886f9860d13856e70c5650c382f1dde9ba9]1;giterror: Your local changes to the following files would be overwritten by merge:
-	.idea/workspace.xml
-	main/get_name_score.py
-Please commit your changes or stash them before you merge.
-Aborting
-fatal: revert failed
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[19:26:36] C:[31m128[00m
-[1m[31m$ [00m[K[?1h=[?2004hggit commit -m ""c"o"m"" " " h"a"s"[1C[1C              g  ggit stash help[?1l>[?2004l
-]2;git stash help]1;gitusage: git stash list [<options>]
-   or: git stash show [<stash>]
-   or: git stash drop [-q|--quiet] [<stash>]
-   or: git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]
-   or: git stash branch <branchname> [<stash>]
-   or: git stash save [--patch] [-k|--[no-]keep-index] [-q|--quiet]
-		      [-u|--include-untracked] [-a|--all] [<message>]
-   or: git stash [push [--patch] [-k|--[no-]keep-index] [-q|--quiet]
-		       [-u|--include-untracked] [-a|--all] [-m <message>]
-		       [-- <pathspec>...]]
-   or: git stash clear
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[19:27:38] C:[31m1[00m
-[1m[31m$ [00m[K[?1h=[?2004hggit stash a save    [?1l>[?2004l
-]2;git stash]1;gitSaved working directory and index state WIP on master: d0b9123 Merge remote-tracking branch 'origin/master'
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[19:28:46] 
-[1m[31m$ [00m[K[?1h=[?2004hggit status[?1l>[?2004l
-]2;git status]1;gitOn branch master
-Your branch is up to date with 'origin/master'.
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	[31mtypescript[m
-
-nothing added to commit but untracked files present (use "git add" to track)
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[19:28:53] 
-[1m[31m$ [00m[K[?1h=[?2004hggiti  g  git statussh  help[10Drevert -n 2e451886f9860d13856e70c5650c382f1dde9ba9[?1l>[?2004l
-]2;git revert -n 2e451886f9860d13856e70c5650c382f1dde9ba9]1;git[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[19:29:11] 
-[1m[31m$ [00m[K[?1h=[?2004hggit - commit - m m ""v"" r"e"v"e"r"t" "t"o" "l"a"s"t" "a"v"a"i"l"a"b"e"l"" " l"e" "v"e"r"s"i"o"n"[?1l>[?2004l
-]2;git commit -m "revert to last available version"]1;git[master 622519d] revert to last available version
- 2 files changed, 18 insertions(+), 17 deletions(-)
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[19:29:46] 
-[1m[31m$ [00m[K[?1h=[?2004hggit push[?1l>[?2004l
-]2;git push]1;gitCounting objects: 6, done.
-Delta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
-Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 739 bytes | 739.00 KiB/s, done.
-Total 6 (delta 5), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/5)   [Kremote: Resolving deltas:  20% (1/5)   [Kremote: Resolving deltas:  40% (2/5)   [Kremote: Resolving deltas:  60% (3/5)   [Kremote: Resolving deltas:  80% (4/5)   [Kremote: Resolving deltas: 100% (5/5)   [Kremote: Resolving deltas: 100% (5/5), completed with 5 local objects.[K
-To https://github.com/clg456852/Baby_name.git
-   d0b9123..622519d  master -> master
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[19:29:56] 
-[1m[31m$ [00m[K[?1h=[?2004hggit status[?1l>[?2004l
-]2;git status]1;gitOn branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	[31mmodified:   ../.idea/workspace.xml[m
-	[31mmodified:   get_name_score.py[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	[31m../.idea/inspectionProfiles/[m
-	[31mtypescript[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[22:26:18] 
-[1m[31m$ [00m[K[?1h=[?2004hggut g  ggit poous    u  comi mit - m ""s"t"i"l"l"" " " " " t"i"l"" m"e" "o"u"t"ptime out"[9Dotime out"[9Dstime out"[9D[1Ctime out"[9D time out"[9D[5C[4C[?1l>[?2004l
-]2;git commit -m "post time out"]1;gitOn branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-	[31mmodified:   ../.idea/workspace.xml[m
-	[31mmodified:   get_name_score.py[m
-
-Untracked files:
-	[31m../.idea/inspectionProfiles/[m
-	[31mtypescript[m
-
-no changes added to commit
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[22:26:56] C:[31m1[00m
-[1m[31m$ [00m[K[?1h=[?2004hggit stash[?1l>[?2004l
-]2;git stash]1;gitSaved working directory and index state WIP on master: 622519d revert to last available version
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[22:27:11] 
-[1m[31m$ [00m[K[?1h=[?2004hggit stash pop[?1l>[?2004l
-]2;git stash pop]1;gitOn branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	[31mmodified:   ../.idea/workspace.xml[m
-	[31mmodified:   get_name_score.py[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	[31m../.idea/inspectionProfiles/[m
-	[31mtypescript[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-Dropped refs/stash@{0} (77d8de7fc395d24a2f3afc6db1458738e460cdc6)
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[22:27:18] 
-[1m[31m$ [00m[K[?1h=[?2004hggit push[?1l>[?2004l
-]2;git push]1;gitEverything up-to-date
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[22:27:47] 
-[1m[31m$ [00m[K[?1h=[?2004hiigi  ggit st
-[0mstash      -- stash away changes to dirty working directory
-status     -- show working-tree status
-[Jstripspace -- filter out empty lines[J[3A[0m[27m[24m[2Cgit st[Katus[1m [0m[0m [?1l>[?2004l
-[J]2;git status]1;gitOn branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
-
-	[31mmodified:   ../.idea/workspace.xml[m
-	[31mmodified:   get_name_score.py[m
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	[31m../.idea/inspectionProfiles/[m
-	[31mtypescript[m
-
-no changes added to commit (use "git add" and/or "git commit -a")
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[22:42:48] 
-[1m[31m$ [00m[K[?1h=[?2004hggit commit -m"" ""[1C "" [1C"[1C f"i"x" "b"u"g" "o"f" "s"r"" " l"o"c"a"l" "s"t"r" "o"v"v"e"r"" " " e"r"i"" r"i"d"e" "b"u"j"i"" " " " b"u"i"l"d"-"i"n" "s"t"r"[?1l>[?2004l
-]2;git commit -m "fix bug of local str override build-in str"]1;gitOn branch master
-Your branch is up to date with 'origin/master'.
-
-Changes not staged for commit:
-	[31mmodified:   ../.idea/workspace.xml[m
-	[31mmodified:   get_name_score.py[m
-
-Untracked files:
-	[31m../.idea/inspectionProfiles/[m
-	[31mtypescript[m
-
-no changes added to commit
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[22:43:30] C:[31m1[00m
-[1m[31m$ [00m[K[?1h=[?2004hggit commit -am ""[7mf[7mix bug of local str override build-in str[27m"[42D[27mf[27mi[27mx[27m [27mb[27mu[27mg[27m [27mo[27mf[27m [27ml[27mo[27mc[27ma[27ml[27m [27ms[27mt[27mr[27m [27mo[27mv[27me[27mr[27mr[27mi[27md[27me[27m [27mb[27mu[27mi[27ml[27md[27m-[27mi[27mn[27m [27ms[27mt[27mr[1C[?1l>[?2004l
-]2;git commit -am "fix bug of local str override build-in str"]1;git[master c837014] fix bug of local str override build-in str
- 2 files changed, 270 insertions(+), 66 deletions(-)
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[22:46:24] 
-[1m[31m$ [00m[K[?1h=[?2004hggit push[?1l>[?2004l
-]2;git push]1;gitCounting objects: 6, done.
-Delta compression using up to 4 threads.
-Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
-Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 2.31 KiB | 2.31 MiB/s, done.
-Total 6 (delta 5), reused 0 (delta 0)
-remote: Resolving deltas:   0% (0/5)   [Kremote: Resolving deltas:  20% (1/5)   [Kremote: Resolving deltas:  40% (2/5)   [Kremote: Resolving deltas:  60% (3/5)   [Kremote: Resolving deltas:  80% (4/5)   [Kremote: Resolving deltas: 100% (5/5)   [Kremote: Resolving deltas: 100% (5/5), completed with 5 local objects.[K
-To https://github.com/clg456852/Baby_name.git
-   622519d..c837014  master -> master
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[22:46:40] 
-[1m[31m$ [00m[K[?1h=[?2004hggit status[1m [0m[0m [?1l>[?2004l
-]2;git status]1;gitOn branch master
-Your branch is up to date with 'origin/master'.
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-	[31m../.idea/inspectionProfiles/[m
-	[31mtypescript[m
-
-nothing added to commit but untracked files present (use "git add" to track)
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[22:46:44] 
-[1m[31m$ [00m[K[?1h=[?2004hs ggit stash list[?1l>[?2004l
-]2;git stash list]1;git[?1049h[?1h=stash@{0}: WIP on master: d0b9123 Merge remote-tracking branch 'origin/master'[m
-[7m(END)[27m[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[22:47:34] 
-[1m[31m$ [00m[K[?1h=[?2004hgit stash list[?1l>[?2004l
-]2;git stash list]1;git[?1049h[?1h=stash@{0}: WIP on master: d0b9123 Merge remote-tracking branch 'origin/master'[m
-[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[22:48:09] 
-[1m[31m$ [00m[K[?1h=[?2004hggkg  ggtg git stash drop stash@{0}[?1l>[?2004l
-]2;git stash drop stash@{0}]1;gitDropped stash@{0} (3f2b70b171dd052fc0ff216d8cfd4860e688aa50)
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[22:48:30] 
-[1m[31m$ [00m[K[?1h=[?2004hggit sh tatsh[?1l>[?2004l
-]2;git statsh]1;gitgit: 'statsh' is not a git command. See 'git --help'.
-
-The most similar command is
-	stash
-[1m[7m%[27m[1m[0m                                                                                                                                        ]2;guoyifan@bogon]1;..me-score/main]7;file://bogon/Users/guoyifan/code/python/name_score/chinese-name-score/chinese-name-score/main[0m[27m[24m[J
-[1m[34m#[00m [36mguoyifan [37m@ [32mbogon [37min [1m[33m~/code/python/name_score/chinese-name-score/chinese-name-score/main[00m [37mon[00m git:[36mmaster [31mx[00m [37m[22:48:36] C:[31m1[00m
-[1m[31m$ [00m[K[?1h=[?2004hggit 

@@ -7,11 +7,13 @@ import os
 import re
 import jieba
 
+
 all_tang_song_verse = "../corpus/corpus-master/hans_全宋词_全唐五代词.txt"
 tang_300_peom = "../corpus/corpus-master/hans_唐诗三百首.txt"
 song_300_verse = "../corpus/corpus-master/hans_宋词三百首.txt"
 shi_jing = "../corpus/corpus-master/hans_诗经.txt"
 chu_ci = "../corpus/corpus-master/hans_楚辞.txt"
+lun_yu = "../corpus/corpus-master/hans_论语.txt"
 # 设置分句的标志符号；可以根据实际需要进行修改
 cutlist = "。！？；".decode('utf-8')
 
@@ -103,6 +105,11 @@ def create_corpus_of_chu_ci():
 def create_corpus_of_shi_jing():
     create_corpus(shi_jing)
 
+
+# 论语
+def create_corpus_of_lun_yu():
+    create_corpus(lun_yu)
+
 if __name__ == '__main__':
 
     # convert_hant2hans()
@@ -113,6 +120,7 @@ if __name__ == '__main__':
 
     # create_corpus_of_chu_ci()
 
-    create_corpus_of_shi_jing()
+    # create_corpus_of_shi_jing()
 
+    create_corpus_of_lun_yu()
 
